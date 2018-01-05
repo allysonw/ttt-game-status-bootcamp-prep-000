@@ -26,7 +26,7 @@ def won?(board)
     won = (combination_moves.all? do |character|
         character == "X" end) ||
         (combination_moves.all? do |character|
-            character == "O" end)
+        character == "O" end)
 
     if won
       return combination
