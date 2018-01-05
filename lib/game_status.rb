@@ -35,6 +35,13 @@ def won?(board)
       return combination
     end
   end
-  
+
   return false
+end
+
+def full?(board)
+  return board.all? do |space|
+    space != " " & space != nil
+  end
+
 end
