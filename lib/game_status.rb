@@ -44,3 +44,7 @@ def full?(board)
     space != " " && space != nil
   end
 end
+
+def draw?
+  if full? && !won?
+end
