@@ -33,8 +33,6 @@ def won?(board)
 
     if won
       return combination
-    else
-      return false
     end
   end
 end
