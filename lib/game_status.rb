@@ -27,5 +27,5 @@ def won?(board)
       end
     end
   end
-  if won {return winning_combo}
+  if won return winning_combo end
 end
