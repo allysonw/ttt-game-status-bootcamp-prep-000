@@ -16,7 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  winning_combo = [];
+  winning_combo = []
+  won = false
+  
   WIN_COMBINATIONS.each do |combination|
     combination_moves = [board[combination[0]],
                          board[combination[1]],
@@ -27,5 +29,10 @@ def won?(board)
       end
     end
   end
-  if won return winning_combo end
+
+  if won 
+    return winning_combo 
+  else
+    return false
+  end
 end
