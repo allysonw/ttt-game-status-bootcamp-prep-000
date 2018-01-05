@@ -23,9 +23,11 @@ def won?(board)
     combination_moves = [board[combination[0]],
                          board[combination[1]],
                          board[combination[2]]]
-    won = combination_moves.all? do |character|
-        character == "X"
-    end
+    won = (combination_moves.all? do |character|
+        character == "X" end) ||
+        (combination_moves.all? do |character|
+            character == "O" end)
+
     if won
       return combination
     else
