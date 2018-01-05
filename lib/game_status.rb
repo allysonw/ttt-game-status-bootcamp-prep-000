@@ -43,5 +43,4 @@ def full?(board)
   return board.all? do |space|
     space != " " & space != nil
   end
-
 end
