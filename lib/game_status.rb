@@ -24,15 +24,12 @@ def won?(board)
                          board[combination[1]],
                          board[combination[2]]]
     won = combination_moves.all? do |character|
-      if character == "X" || character == "O"
-        winning_combo = combination
-      end
+        character == "X"
     end
-  end
-
-  if won
-    return winning_combo
-  else
-    return false
+    if won
+      return combination
+    else
+      return false
+    end
   end
 end
