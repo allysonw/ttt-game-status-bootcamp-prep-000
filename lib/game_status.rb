@@ -25,7 +25,7 @@ def won?(board)
     combination_moves = [board[combination[0]],
                          board[combination[1]],
                          board[combination[2]]]
-    puts combination_moves
+    #puts combination_moves
     won = (combination_moves.all? do |character|
         character == "X" end) ||
         (combination_moves.all? do |character|
@@ -35,4 +35,5 @@ def won?(board)
       return combination
     end
   end
+  return false
 end
