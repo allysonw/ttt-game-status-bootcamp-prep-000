@@ -21,6 +21,9 @@ def won?(board)
   won = false
 
   WIN_COMBINATIONS.each do |combination|
+    winning_combo = []
+    combination_moves = []
+    won = false
     combination_moves = [board[combination[0]],
                          board[combination[1]],
                          board[combination[2]]]
