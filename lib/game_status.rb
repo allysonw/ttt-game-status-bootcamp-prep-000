@@ -24,6 +24,7 @@ def won?(board)
     won = combination_moves.all? do |character|
       if character == "X" || character == "O"
         winning_combo = combination
+      end
     end
   end
   if won {return winning_combo}
